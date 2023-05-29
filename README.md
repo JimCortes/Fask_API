@@ -4,7 +4,7 @@
 
 The first endpoint receives a username and password. When these parameters are correct it returns a JWT token; otherwise it should return a 403 HTTP error message.
 
-
+```
 curl -d "username=admin&password=secret" http://localhost:8000/login
 {
   "data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
